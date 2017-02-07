@@ -1,5 +1,11 @@
 \input{utils/preamble}
 
+% Header og footer
+\lhead{I4DAB}	\chead{\LaTeX template}	\rhead{\today}
+\lfoot{}		\cfoot{}				\rfoot{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0pt}
+
 \begin{document}
 	\pagenumbering{roman}
 	\input{utils/titlepage}
@@ -8,13 +14,5 @@
 	
 	% include sections here
 	\input{docs/spm1}\newpage
-	\input{docs/spm2}\newpage
-	\input{docs/spm3}\newpage
-	\input{docs/spm4}\newpage
-	\input{docs/spm5}\newpage
-	\input{docs/spm6}\newpage
-	\input{docs/spm7}\newpage
-	\input{docs/spm8}\newpage
-	\input{docs/spm9}
 	% include sections before here
 \end{document}

@@ -1,7 +1,18 @@
-\documentclass{article}
+\input{utils/preamble}
+
+% Header og footer
+\lhead{I4DAB}	\chead{\LaTeX template}	\rhead{\today}
+\lfoot{}		\cfoot{}				\rfoot{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0pt}
 
 \begin{document}
-
-	Hello World!
-
+	\pagenumbering{roman}
+	\input{utils/titlepage}
+	\input{utils/indholdsfortegnelser}
+	\pagenumbering{arabic}
+	
+	% include sections here
+	\input{docs/spm1}\newpage
+	% include sections before here
 \end{document}

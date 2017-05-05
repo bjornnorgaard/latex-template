@@ -1,18 +1,23 @@
 \input{utils/preamble}
 
-% Header og footer
-\lhead{I4DAB}	\chead{\LaTeX template}	\rhead{\today}
-\lfoot{}		\cfoot{}				\rfoot{\thepage}
-\renewcommand{\headrulewidth}{1pt}
-\renewcommand{\footrulewidth}{0pt}
+% Header
+\lhead{Left head}	\chead{\LaTeX template}	\rhead{\today}
+
+% Footer
+\lfoot{}			\cfoot{}				\rfoot{\thepage}
 
 \begin{document}
 	\pagenumbering{roman}
 	\input{utils/titlepage}
-	\input{utils/indholdsfortegnelser}
+	\input{utils/contents}
 	\pagenumbering{arabic}
 	
-	% include sections here
-	\input{docs/spm1}\newpage
-	% include sections before here
+	\chapter{First chapter}
+	Some text.
+	
+	\newpage
+	
+	\section{First section}
+	More text.
+	
 \end{document}

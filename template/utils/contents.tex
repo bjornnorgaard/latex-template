@@ -1,23 +1,26 @@
 % Depth of Contents
 \setcounter{tocdepth}{2}
 
+% Links in text are red, but Contents links
+% should remain black text.
 \hypersetup{
 	colorlinks,
 	linkcolor={},
+}
+
+% Colors on links and refs
+\hypersetup{
+	colorlinks,
+	linkcolor={red!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}
 }
 
 %\listoftodos %% udkommenter før ''release''
 \tableofcontents
 %\listoffigures
 %\lstlistoflistings
-%%\listoftables
-
-\hypersetup{
-	colorlinks,
-	linkcolor={red!50!black}, % used to be: 'red!50!black', men det fuckede indholdsfortegnelsen...
-	citecolor={blue!50!black},
-	urlcolor={blue!80!black}
-}
+%\listoftables
 
 \thispagestyle{empty}	% fjerner sidetal ved indholdfortegnelsen
 \cleardoublepage		% rydder resten af siden

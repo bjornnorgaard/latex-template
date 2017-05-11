@@ -1,10 +1,11 @@
-*.synctex.gz 
-*.aux 
-*.lof 
+*.synctex.gz
+*.aux
+*.lof
 *.lot
-*.toc 
+*.toc
 *.tdo
 *.out
 *.pdf
-*.tdo 
+*.tdo
 *.lol
+*.dvi

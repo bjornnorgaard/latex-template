@@ -1,30 +1,22 @@
 \input{utils/preamble}
 
 % Header
-\lhead{Left head}	\chead{\LaTeX template}	\rhead{\today}
+\lhead{Left head}   \chead{\LaTeX template}    \rhead{\today}
 
 % Footer
-\lfoot{}			\cfoot{}				\rfoot{\thepage}
+\lfoot{}            \cfoot{}                \rfoot{\thepage}
 
 \begin{document}
-	\pagenumbering{roman}
-	\input{utils/titlepage}
-	\input{utils/contents}
-	\pagenumbering{arabic}
-	
-	\chapter{First chapter}
-	Some text.
-	
-	\newpage
-	
-	\section{First section}
-	More text.
-	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.7\linewidth]{figs/titlepagefig}
-		\caption[sidfuh]{saifuh}
-		\label{fig:titlepagefig}
-	\end{figure}
-		
+    \pagenumbering{roman}
+    \input{utils/titlepage}
+    \input{utils/contents}
+    \pagenumbering{arabic}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.7\linewidth]{figs/titlepagefig}
+        \caption[sidfuh]{saifuh}
+        \label{fig:titlepagefig}
+    \end{figure}
+
 \end{document}

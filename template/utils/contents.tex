@@ -16,12 +16,20 @@
 	urlcolor={blue!80!black}
 }
 
-%\listoftodos %% udkommenter før ''release''
+% Comment this line before release
+%\listoftodos
+
+% Select list to display
 \tableofcontents
 %\listoffigures
 %\lstlistoflistings
 %\listoftables
 
-\thispagestyle{empty}	% fjerner sidetal ved indholdfortegnelsen
-\cleardoublepage		% rydder resten af siden
-\setcounter{page}{1}	% "nulstiller" sidetal
+% Removed pagenumbers from Contents
+\thispagestyle{empty}
+
+% Clears rest of page
+\cleardoublepage
+
+% Resets pagecounter after preamble
+\setcounter{page}{1}

@@ -11,3 +11,5 @@
 *.log
 *.bbl
 *.blg
+*.bfc
+*.run.xml

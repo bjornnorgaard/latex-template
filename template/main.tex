@@ -6,13 +6,16 @@
 % Footer
 \lfoot{}            \cfoot{}                    \rfoot{\thepage}
 
+\input{docs/glossaries}
+
 \begin{document}
     \pagenumbering{roman}
-    \input{utils/titlepage}
+    \input{docs/titlepage}
     \input{utils/contents}
     \pagenumbering{arabic}
 
 	\input{docs/helloworld}
 
-	\input{utils/bibliography}
+    \printglossaries
+	\input{docs/bibliography}
 \end{document}

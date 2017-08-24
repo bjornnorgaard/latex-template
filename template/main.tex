@@ -1,20 +1,30 @@
 \input{utils/preamble}
 
-% Header
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{1pt} % Header line thickness
+\renewcommand{\footrulewidth}{0pt} % Footer line thickness
+% Header 
 \lhead{Left head}   \chead{\LaTeX template}     \rhead{\today}
-
-% Footer
+% Footer 
 \lfoot{}            \cfoot{}                    \rfoot{\thepage}
 
 \input{docs/glossaries}
 
 \begin{document}
-    \pagenumbering{roman}
+    \pagenumbering{Roman}    
     \input{docs/titlepage}
+    \input{docs/frontmatter/main}  
     \input{utils/contents}
     \pagenumbering{arabic}
 
-	\input{docs/helloworld}
+	% Chapter for testing
+	\input{docs/demo/main}
+
+	% Chapters begin
+	\input{docs/introduction/main}\newpage
+	\input{docs/project/main}\newpage
+	\input{docs/process/main}	
+	% Chapters end
 
     \printglossaries
 	\input{docs/bibliography}

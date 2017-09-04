@@ -1,0 +1,28 @@
+%--------------------------------------------------------------------------%
+%------------------------- FRONT MATTER -----------------------------------%
+%--------------------------------------------------------------------------%
+%\includeonly{testing} %If you don't want to compile every time
+
+\frontmatter
+\include{utils/frontpage} % Include the frontpage
+
+% Page number in roman style
+\pagenumbering{roman}
+\addcontentsline{toc}{chapter}{\abstractname}
+\include{utils/abstract}
+\clearpage
+
+\addcontentsline{toc}{chapter}{\contentsname}
+\thispagestyle{empty}
+\tableofcontents*
+
+\clearpage
+
+\addcontentsline{toc}{chapter}{\listfigurename}
+\thispagestyle{empty}
+\listoffigures*
+\clearpage
+
+\addcontentsline{toc}{chapter}{\listtablename}
+\thispagestyle{empty}
+\listoftables*

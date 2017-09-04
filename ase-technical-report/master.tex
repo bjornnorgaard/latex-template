@@ -177,12 +177,12 @@
 %------------------------- FRONT MATTER -----------------------------------%
 %--------------------------------------------------------------------------%
 \frontmatter
-\include{frontpage} % Include the frontpage
+\include{utils/frontpage} % Include the frontpage
 
 % Page number in roman style
 \pagenumbering{roman}
 \addcontentsline{toc}{chapter}{\abstractname}
-\include{abstract}
+\include{utils/abstract}
 \clearpage
 
 \addcontentsline{toc}{chapter}{\contentsname}
@@ -204,7 +204,7 @@
 %------------------------- MAIN MATTER ------------------------------------%
 %--------------------------------------------------------------------------%
 \mainmatter
-\include{testing} % Include the chapters
+\include{docs/testing} % Include the chapters
 
 Test of the reference system \cite{Rabiner89}.
 %--------------------------------------------------------------------------%
@@ -215,7 +215,7 @@ Test of the reference system \cite{Rabiner89}.
 
 \appendix
 %\addtocontents{toc}{\cftpagenumbersoff{chapter}}
-\include{appendixA}
+\include{utils/appendixA}
 
 \backmatter
 
